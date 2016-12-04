@@ -14,7 +14,7 @@ void loop() {
 	Serial.println(78, DEC);
 	Serial.println(78, HEX);
 
-	Serial.println(4.14, 0);
+	Serial.println(4.20, 0);
 	Serial.println(4.14, 1);
 
 	Serial.println("");
