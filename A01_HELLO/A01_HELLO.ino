@@ -15,8 +15,10 @@ void loop() {
 	Serial.println(78, HEX);
 	Serial.println(4.20, 0);
 	Serial.println(4.14, 1);
+
+	float f = 30.5678;
 	char text[40];
-	sprintf(text, "%d,%d,%s", 100, 200, String(30.5f);
+	sprintf(text, "%d,%d,%d.%d", 100, 200, (int)f, (int)(f*1000)%1000);
 	Serial.println(text);
 	Serial.println("----------------------------------------------");
 
