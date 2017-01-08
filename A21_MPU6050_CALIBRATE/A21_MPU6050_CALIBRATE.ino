@@ -2,10 +2,10 @@
 #include "i2cUtil.h"
 #include "mpu6050.h"
 
-#define PIN_MOTOR_1				11
-#define PIN_MOTOR_2				3
-#define PIN_MOTOR_3				9
-#define PIN_MOTOR_4				10
+#define PIN_MOTOR_1       6
+#define PIN_MOTOR_2       10
+#define PIN_MOTOR_3       5
+#define PIN_MOTOR_4       9
 
 float rad2degree = 57.3;
 float delta      = 20;
@@ -32,8 +32,8 @@ void setup() {
 void loop() {
 	t = millis();
 	// printTemperature();
-	printAccelerometer();
-	// printGyroscope();
+	// printAccelerometer();
+	printGyroscope();
 	// setMotorPower(20);
 
 	// Serial.println(((float)(millis()-t)/delta)*100);

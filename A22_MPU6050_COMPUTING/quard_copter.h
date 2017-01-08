@@ -3,11 +3,10 @@
 
 #include <Wire.h>
 
-#define PIN_LED						13
-#define PIN_MOTOR_1					11
-#define PIN_MOTOR_2					3
-#define PIN_MOTOR_3					9
-#define PIN_MOTOR_4					10
+#define PIN_MOTOR_1					6
+#define PIN_MOTOR_2					10
+#define PIN_MOTOR_3					5
+#define PIN_MOTOR_4					9
 
 #define AUTO_CALIBRATE_AMOUNT		300
 #define BASE_GRAVITY				9.81

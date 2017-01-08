@@ -2,6 +2,7 @@
 #include "I2Cdev.h"
 #include "MPU6050.h"
 #include "quard_copter.h"
+#include "log.h"
 
 void initQuardCopter() {
 	pinMode(PIN_MOTOR_1, OUTPUT);
