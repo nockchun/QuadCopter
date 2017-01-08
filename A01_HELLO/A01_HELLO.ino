@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 void setup() {
-	Serial.begin(19200);	// init serial communication (data rate : 19200)
+	Serial.begin(115200);	// init serial communication (data rate : 19200)
 }
 
 void loop() {
@@ -13,11 +13,12 @@ void loop() {
 	Serial.println(78, OCT);
 	Serial.println(78, DEC);
 	Serial.println(78, HEX);
-
 	Serial.println(4.20, 0);
 	Serial.println(4.14, 1);
+	char text[40];
+	sprintf(text, "%d,%d,%s", 100, 200, String(30.5f);
+	Serial.println(text);
+	Serial.println("----------------------------------------------");
 
-	Serial.println("");
-
-	delay(5000);
+	delay(1000);
 }
